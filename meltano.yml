@@ -22,3 +22,6 @@ plugins:
   - name: gdrive
     variant: matatika
     pip_url: git+https://github.com/Matatika/utility-gdrive.git@v0.2.0
+  - name: matatika
+    variant: matatika
+    pip_url: matatika==1.15.1
