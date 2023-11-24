@@ -1,4 +1,4 @@
-# Document-loader-rfszmxi
+# Document Loader
 
 ## Setup
 1. Upload the contents of `sample_documents` to a folder in Google Drive
