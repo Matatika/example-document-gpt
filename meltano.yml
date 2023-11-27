@@ -30,5 +30,5 @@ plugins:
   - name: doc-converter
     variant: matatika
     config:
-      file_path: output
-
+      file_path: sample_documents
+      output_dir: output

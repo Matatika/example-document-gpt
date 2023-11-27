@@ -12,7 +12,15 @@
       "kind": "string",
       "label": "File path",
       "description": "File or directory path of the document(s) to convert",
-      "required": "true",
+      "required": "false",
+      "protected": false
+    },
+    {
+      "name": "output_dir",
+      "kind": "string",
+      "label": "Output directory",
+      "description": "Directory where converted document(s) are output into",
+      "required": "false",
       "protected": false
     }
   ]

@@ -1,12 +1,10 @@
 version: pipelines/v0.1
-name: Load documents
+name: Load local documents
 timeout: 600
 data_components:
-  - gdrive
   - doc-converter
   - matatika
 script: |-
-  meltano install utility gdrive
   meltano install utility doc-converter
   meltano install utility matatika
 
@@ -16,7 +14,7 @@ script: |-
     ghostscript \
     tesseract-ocr
 
-  meltano run gdrive:run doc-converter
+  meltano run doc-converter
 
   set -e
   shopt -s nullglob
@@ -24,7 +22,7 @@ script: |-
 
   export MATATIKA_CONTEXT_HOME=.matatika
 
-  for dataset in $DOC_CONVERTER_FILE_PATH/*.{yaml,yml}
+  for dataset in $DOC_CONVERTER_OUTPUT_DIR/*.{yaml,yml}
   do
     meltano invoke matatika publish "$dataset"
   done
