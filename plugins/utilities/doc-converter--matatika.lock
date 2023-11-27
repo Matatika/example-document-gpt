@@ -11,7 +11,7 @@
       "name": "file_path",
       "kind": "string",
       "label": "File path",
-      "description": "File or directory path of the document(s) to convert",
+      "description": "File or directory path of the document(s) to convert (defaults to the current working directory)",
       "required": "false",
       "protected": false
     },
@@ -19,7 +19,7 @@
       "name": "output_dir",
       "kind": "string",
       "label": "Output directory",
-      "description": "Directory where converted document(s) are output into",
+      "description": "Directory where converted document(s) are output into (defaults to the parent directory for each document)",
       "required": "false",
       "protected": false
     }
