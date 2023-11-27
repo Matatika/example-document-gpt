@@ -4,6 +4,7 @@
   "namespace": "doc_converter",
   "variant": "matatika",
   "label": "Document converter",
+  "logo_url": "https://img.icons8.com/?size=512&id=vDJ4dnSWxyvG&format=png",
   "pip_url": "git+https://github.com/Matatika/utility-doc-converter.git",
   "description": "Utility for converting `.doc`, `.docx` and `.pdf` files into the Matatika dataset format.",
   "settings": [
