@@ -23,6 +23,15 @@
       "description": "Directory where converted document(s) are output into (defaults to the parent directory for each document)",
       "required": "false",
       "protected": false
+    },
+    {
+      "name": "source",
+      "kind": "string",
+      "label": "Source",
+      "value": "Documents",
+      "description": "Name of the source to group converted document(s) by",
+      "required": "false",
+      "protected": false
     }
   ]
 }
