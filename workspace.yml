@@ -1,5 +1,4 @@
 version: workspaces/v0.1
-name: Document loader
 app_properties:
   WELCOME_DATASET_ALIAS: welcome
   HOME_PAGE: explore
