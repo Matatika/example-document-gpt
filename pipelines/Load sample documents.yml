@@ -15,7 +15,7 @@ script: |-
     tesseract-ocr
 
   # copy the local documents
-  cp -R sample_documents documents
+  cp -R sample_documents/* documents
   meltano run doc-converter
 
   set -e
