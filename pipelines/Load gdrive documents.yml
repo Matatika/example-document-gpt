@@ -1,5 +1,5 @@
 version: pipelines/v0.1
-name: Load remote documents
+name: Load GDrive documents
 timeout: 600
 data_components:
   - gdrive

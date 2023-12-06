@@ -1,5 +1,5 @@
 version: pipelines/v0.1
-name: Load local documents
+name: Load example documents
 timeout: 600
 data_components:
   - doc-converter
@@ -14,6 +14,8 @@ script: |-
     ghostscript \
     tesseract-ocr
 
+  # copy the examples
+  cp -R sample_documents documents
   meltano run doc-converter
 
   set -e
