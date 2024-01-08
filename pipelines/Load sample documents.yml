@@ -23,8 +23,4 @@ script: |-
   shopt -s nocaseglob
 
   export MATATIKA_CONTEXT_HOME=.matatika
-
-  for dataset in $DOC_CONVERTER_OUTPUT_DIR/*.{yaml,yml}
-  do
-    meltano invoke matatika publish "$dataset"
-  done
+  meltano invoke matatika publish $DOC_CONVERTER_OUTPUT_DIR

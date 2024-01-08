@@ -26,7 +26,7 @@ plugins:
       output_path: documents
   - name: matatika
     variant: matatika
-    pip_url: matatika==1.15.1
+    pip_url: matatika~=1.16.0
   - name: doc-converter
     variant: matatika
     config:
