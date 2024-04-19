@@ -8,8 +8,8 @@ environments:
 plugins:
   extractors:
   - name: tap-beautifulsoup
-    variant: meltanolabs
-    pip_url: git+https://github.com/ReubenFrankel/tap-beautifulsoup.git@dev
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-beautifulsoup.git
     config:
       source_name: meltano_sdk
       site_url: https://sdk.meltano.com/en/latest/
