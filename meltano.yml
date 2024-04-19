@@ -6,6 +6,16 @@ environments:
 - name: staging
 - name: prod
 plugins:
+  extractors:
+  - name: tap-beautifulsoup
+    variant: meltanolabs
+    pip_url: git+https://github.com/ReubenFrankel/tap-beautifulsoup.git@dev
+    config:
+      source_name: meltano_sdk
+      site_url: https://sdk.meltano.com/en/latest/
+      find_all_kwargs:
+        name: body
+      exclude_tags: [header, title, aside, label, button, footer, style]
   loaders:
   - name: target-postgres
     variant: matatika
@@ -29,6 +39,7 @@ plugins:
     pip_url: matatika~=1.16.0
   - name: doc-converter
     variant: matatika
+    pip_url: git+https://github.com/Matatika/utility-doc-converter.git@feature/support-tap-output-files
     config:
       file_path: documents
       output_dir: output
