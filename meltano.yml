@@ -13,9 +13,6 @@ plugins:
     config:
       source_name: meltano_sdk
       site_url: https://sdk.meltano.com/en/latest/
-      find_all_kwargs:
-        name: body
-      exclude_tags: [header, title, aside, label, button, footer, style]
   loaders:
   - name: target-postgres
     variant: matatika
