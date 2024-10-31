@@ -6,9 +6,7 @@ data_components:
 - doc-converter
 - matatika
 script: |-
-  meltano install extractor tap-beautifulsoup
-  meltano install utility doc-converter
-  meltano install utility matatika
+  meltano install - tap-beautifulsoup doc-converter matatika
 
   # system dependencies of doc-converter
   apt-get update -y && apt-get install -y \

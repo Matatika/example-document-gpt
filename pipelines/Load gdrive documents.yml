@@ -6,9 +6,7 @@ data_components:
   - doc-converter
   - matatika
 script: |-
-  meltano install utility gdrive
-  meltano install utility doc-converter
-  meltano install utility matatika
+  meltano install - gdrive doc-converter matatika
 
   # system dependencies of doc-converter
   apt-get update -y && apt-get install -y \

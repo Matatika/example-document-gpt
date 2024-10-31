@@ -27,7 +27,8 @@
     },
     {
       "name": "oauth_credentials.authorization_url",
-      "kind": "hidden",
+      "kind": "string",
+      "hidden": true,
       "value": "https://oauth2.googleapis.com/token",
       "label": "OAuth identity provider authorization endpoint used create and refresh tokens",
       "description": "The endpoint used to authenticate and authorize access to the user's Google Drive account.",
@@ -36,7 +37,8 @@
     },
     {
       "name": "oauth_credentials.scope",
-      "kind": "hidden",
+      "kind": "string",
+      "hidden": true,
       "value": "https://www.googleapis.com/auth/drive.readonly",
       "label": "OAuth scopes we need to request access to",
       "description": "The specific permissions that the application needs to access the user's Google Drive account.",
@@ -45,14 +47,16 @@
     },
     {
       "name": "oauth_credentials.refresh_proxy_url",
-      "kind": "hidden",
+      "kind": "string",
+      "hidden": true,
       "label": "Optional - will be called with 'oauth_credentials.refresh_token' to refresh the access token",
       "description": "A function that will be called to refresh the access token using the refresh token.",
       "protected": false
     },
     {
       "name": "oauth_credentials.refresh_proxy_url_auth",
-      "kind": "hidden",
+      "kind": "string",
+      "hidden": true,
       "label": "Optional - Sets Authorization header on 'oauth_credentials.refresh_url' request",
       "description": "An optional header that can be set on the request to refresh the access token.",
       "protected": false
@@ -60,7 +64,8 @@
     {
       "name": "oauth_credentials.client_id",
       "env": "GDRIVE_CLIENT_ID",
-      "kind": "hidden",
+      "kind": "string",
+      "hidden": true,
       "label": "Optional - OAuth Client ID used if refresh_proxy_url not supplied",
       "description": "The client ID for the OAuth application used to authenticate the user.",
       "protected": false
@@ -68,7 +73,8 @@
     {
       "name": "oauth_credentials.client_secret",
       "env": "GDRIVE_CLIENT_SECRET",
-      "kind": "hidden",
+      "kind": "string",
+      "hidden": true,
       "label": "Optional - OAuth Client Secret used if refresh_proxy_url not supplied",
       "description": "The client secret for the OAuth application used to authenticate the user.",
       "protected": false
@@ -76,7 +82,8 @@
     {
       "name": "oauth_credentials.refresh_token",
       "env": "GDRIVE_REFRESH_TOKEN",
-      "kind": "hidden",
+      "kind": "string",
+      "hidden": true,
       "label": "OAuth Refresh Token",
       "description": "A token used to refresh the access token when it expires.",
       "protected": false
@@ -84,7 +91,8 @@
     {
       "name": "oauth_credentials.access_token",
       "env": "GDRIVE_ACCESS_TOKEN",
-      "kind": "hidden",
+      "kind": "string",
+      "hidden": true,
       "label": "Access Token",
       "description": "A token that grants access to the user's Google Drive account for a limited time.",
       "protected": false,
