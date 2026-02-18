@@ -1,5 +1,5 @@
 version: pipelines/v0.1
-name: Load sample documents
+label: Load sample documents
 timeout: 600
 data_components:
   - doc-converter

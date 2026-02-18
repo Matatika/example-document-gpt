@@ -1,5 +1,5 @@
 version: pipelines/v0.1
-name: Load website content
+label: Load website content
 timeout: 600
 data_components:
 - tap-beautifulsoup
