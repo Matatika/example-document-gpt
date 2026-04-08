@@ -33,7 +33,7 @@ plugins:
       output_path: documents
   - name: matatika
     variant: matatika
-    pip_url: matatika~=1.16.0
+    pip_url: matatika~=1.17.1
   - name: doc-converter
     variant: matatika
     pip_url: git+https://github.com/Matatika/utility-doc-converter.git@feature/support-tap-output-files
